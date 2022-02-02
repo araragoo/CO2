@@ -55,7 +55,7 @@ namespace CO2 {
     //% subcategory="CO2"
     //% blockId=initalCO2
     //% block="Init CO2 AutoCalibraton ON:1 OFF:0 %onoff"
-    function CO2Init(onoff: number) {
+    export function CO2Init(onoff: number) {
         basic.pause(1000)
         serial.redirect(
             SerialPin.P8, //tx
