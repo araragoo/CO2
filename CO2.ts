@@ -26,7 +26,7 @@ namespace CO2 {
             basic.showString("" + convertToText(60 - s*5) + "s")
         }
 
-        serial.writeBuffer(buf0)
+        serial.writeBuffer(cmd_zero_cal)
         basic.pause(100)
         basic.showString("Done!")
     }
@@ -36,7 +36,7 @@ namespace CO2 {
     //% block="CO2[ppm]"
     export function CO2Value(): number {
 
-        serial.writeBuffer(buf)
+        serial.writeBuffer(cmd_get)
         buffer = serial.readBuffer(9)
         if (buffer.getNumber(NumberFormat.UInt8LE, 0) == 255 && buffer.getNumber(NumberFormat.UInt8LE, 1) == 134) {
 //            let sum = 0
@@ -109,7 +109,6 @@ namespace CO2 {
             serial.writeBuffer(cmd_auto_off)
         }
     }
-
 
 
     const MLX90614_I2CADDR = 0x5A;
