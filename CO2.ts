@@ -108,6 +108,7 @@ namespace CO2 {
         } else {
             serial.writeBuffer(cmd_auto_off)
         }
+        basic.pause(100)
     }
 
 
