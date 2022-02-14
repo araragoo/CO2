@@ -868,9 +868,9 @@ let HeartRate = 0;
     //% block="RGB 0-360 %value"
     //% value.min=0 value.max=360 value.defl=0
     export function HSV2RGB (value: number) {
-        let red
-        let green
-        let blue
+        let red = 1
+        let green = 1
+        let blue = 1
         let h = value / 60
         let f = value % 60 / 60
         if (h < 1) {
@@ -894,9 +894,9 @@ let HeartRate = 0;
             green = 0
             blue = f
         } else if (h < 6) {
-            red = 1 - f
+            red = 1
             green = 0
-            blue = 1
+            blue = 1 - f
         } else {
             red = 1
             green = 0
