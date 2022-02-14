@@ -3,6 +3,7 @@
 	"{id:subcategory}CO2": "二酸化炭素CO2",
 	"{id:subcategory}SpO2": "血中酸素濃度SpO2",
 	"{id:subcategory}Temp": "体温",
+	"{id:subcategory}LED": "LED",
 	"CO2.CO2Init|block": "CO2 初期化 キャリブレーションオート ON:1 OFF:0 %onoff",
 	"CO2.CO2Value|block": "CO2値[ppm]",
 	"CO2.CO2SetOffset|block": "CO2 オフセット",
@@ -15,8 +16,11 @@
 	"CO2.TempSetEmiss|block": "放射率 設定 %emiss",
 	"CO2.SpO2Init|block": "SpO2 初期化",
 	"CO2.measureSpO2|block": "SpO2 計測",
-	"CO2.SpO2Value|block": "SpO2[％]",
+	"CO2.SpO2Value|block": "SpO2[%]",
 	"CO2.HRValue|block": "心拍数[回/分]",
 	"CO2.SpO2InitTemp|block": "SpO2 温度開始",
-	"CO2.SpO2Temp|block": "SpO2 温度[℃]"
+	"CO2.SpO2Temp|block": "SpO2 温度[℃]",
+	"CO2.LedBlue|block": "LED 青:0～1023 %value",
+	"CO2.LedGreen|block": "LED 緑:0～1023 %value",
+	"CO2.LedRed|block": "LED 赤:0～1023 %value"
 }
