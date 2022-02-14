@@ -865,8 +865,8 @@ let HeartRate = 0;
 
     //% subcategory="LED"
     //% blockId=ledRGB
-    //% block="RGB 0-360 %value"
-    //% value.min=0 value.max=360 value.defl=0
+    //% block="RGB 0-240 %value"
+    //% value.min=0 value.max=240 value.defl=0
     export function HSV2RGB (value: number) {
         let red = 1
         let green = 1
@@ -889,14 +889,6 @@ let HeartRate = 0;
             red = 1
             green = 1 - f
             blue = 0
-        } else if (h < 5) {
-            red = 1
-            green = 0
-            blue = f
-        } else if (h < 6) {
-            red = 1
-            green = 0
-            blue = 1 - f
         } else {
             red = 1
             green = 0
