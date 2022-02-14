@@ -857,6 +857,56 @@ let HeartRate = 0;
 */
 
 
+ 
+
+
+
+
+
+    //% subcategory="LED"
+    //% blockId=ledRGB
+    //% block="RGB 0-360 %value"
+    //% value.min=0 value.max=360 value.defl=0
+    export function HSV2RGB (value: number) {
+        let red
+        let green
+        let blue
+        let h = value / 60
+        let f = value % 60 / 60
+        if (h < 1) {
+            red = 0
+            green = f
+            blue = 1
+        } else if (h < 2) {
+            red = 0
+            green = 1
+            blue = 1 - f
+        } else if (h < 3) {
+            red = f
+            green = 1
+            blue = 0
+        } else if (h < 4) {
+            red = 1
+            green = 1 - f
+            blue = 0
+        } else if (h < 5) {
+            red = 1
+            green = 0
+            blue = f
+        } else if (h < 6) {
+            red = 1 - f
+            green = 0
+            blue = 1
+        } else {
+            red = 1
+            green = 0
+            blue = 0
+        }
+        LedRed(red * 1023)
+        LedGreen(green * 1023)
+        LedBlue(blue * 1023)
+    }
+
     //% subcategory="LED"
     //% blockId=ledB
     //% block="Blue 0-1023 %value"
