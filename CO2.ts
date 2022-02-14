@@ -3,6 +3,37 @@
 //% weight=5 color=#0fbc11 icon="\uf112" block="Measurement"
 namespace CO2 {
 
+    //% subcategory="LED"
+    //% blockId=ledB
+    //% block="Blue 0-1023 %value"
+    //% value.min=0 value.max=1023 value.defl=0
+    export function ledBlue(value: number) {
+        pins.analogWritePin(AnalogPin.P1, value)
+    }
+
+    //% subcategory="LED"
+    //% blockId=ledG
+    //% block="Green 0-1023 %value"
+    //% value.min=0 value.max=1023 value.defl=0
+    export function ledGreen(value: number) {
+        pins.analogWritePin(AnalogPin.P2, value)
+    }
+
+    //% subcategory="LED"
+    //% blockId=ledR
+    //% block="Red 0-1023 %value"
+    //% value.min=0 value.max=1023 value.defl=0
+    export function ledRed(value: number) {
+        pins.analogWritePin(AnalogPin.P0, value)
+    }
+
+
+
+
+
+
+
+
     let CO2data = 400
     let buffer = pins.createBuffer(9)
     let cmd_get = pins.createBuffer(9)
