@@ -20,7 +20,7 @@
 	"CO2.HRValue|block": "心拍数[回/分]",
 	"CO2.SpO2InitTemp|block": "SpO2 温度開始",
 	"CO2.SpO2Temp|block": "SpO2 温度[℃]",
-	"CO2.HSV2RGB|block": "RGB:0～360 %value",
+	"CO2.HSV2RGB|block": "RGB:0～240 %value",
 	"CO2.LedBlue|block": "LED 青:0～1023 %value",
 	"CO2.LedGreen|block": "LED 緑:0～1023 %value",
 	"CO2.LedRed|block": "LED 赤:0～1023 %value"
