@@ -861,7 +861,7 @@ let HeartRate = 0;
     //% blockId=ledB
     //% block="Blue 0-1023 %value"
     //% value.min=0 value.max=1023 value.defl=0
-    export function LSedBlue(value: number) {
+    export function LedBlue(value: number) {
         pins.analogWritePin(AnalogPin.P1, value)
     }
 
