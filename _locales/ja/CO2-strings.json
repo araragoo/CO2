@@ -16,7 +16,7 @@
 	"CO2.TempSetEmiss|block": "放射率 設定 %emiss",
 	"CO2.SpO2Init|block": "SpO2 初期化",
 	"CO2.measureSpO2|block": "SpO2 計測",
-	"CO2.SpO2Value|block": "SpO2[%]",
+	"CO2.SpO2Value|block": "SpO2[％]",
 	"CO2.HRValue|block": "心拍数[回/分]",
 	"CO2.SpO2InitTemp|block": "SpO2 温度開始",
 	"CO2.SpO2Temp|block": "SpO2 温度[℃]",
